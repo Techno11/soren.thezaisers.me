@@ -67,7 +67,7 @@
                         <!-- TOA Project -->
                         <div class="col-6 col-xl-4 mb-3">
                             <a data-toggle="modal" data-target="#toaModal" class="project">
-                                <img src="./img/toa_icon.webp" alt="The Orange Alliance Logo">
+                                <img src="./img/icons/theorangealliance.png" alt="The Orange Alliance Logo">
                                 <p>The Orange Alliance</p>
                             </a>
                         </div>
@@ -77,6 +77,22 @@
                             <a data-toggle="modal" data-target="#frcPitModal" class="project">
                                 <img src="./img/tv_screen.png" alt="FRC Pit Display Logo">
                                 <p>FRC Pit Display</p>
+                            </a>
+                        </div>
+
+                        <!-- DMeXa -->
+                        <div class="col-6 col-xl-4 mb-3">
+                            <a data-toggle="modal" data-target="#dmexa" class="project">
+                                <img src="./img/dmexa.png" alt="Alexa Logo plus Theatre Light">
+                                <p>DMeXa</p>
+                            </a>
+                        </div>
+
+                        <!-- OsTicket/Snipe-IT -->
+                        <div class="col-6 col-xl-4 mb-3">
+                            <a data-toggle="modal" data-target="#osticketsnipe" class="project">
+                                <img src="./img/osticketsnipe.png" alt="Osticket Logo and Snipe-IT logo">
+                                <p>OsTicket/Snipe-IT Integrator</p>
                             </a>
                         </div>
 
@@ -165,6 +181,20 @@
                         </div>
 
                         <div class="col-6 col-sm-4 col-xl-3 mb-3">
+                            <a href="https://github.com/topics/firebase" target="_blank" class="topic">
+                                <img src="./img/topics/firebase.png" alt="Firebase Logo">
+                                <p>Google Firebase Hosting/Functions</p>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-xl-3 mb-3">
+                            <a href="https://github.com/topics/esp" target="_blank" class="topic">
+                                <img src="./img/topics/esp.png" alt="ESP Image">
+                                <p>ESP Hardware</p>
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-sm-4 col-xl-3 mb-3">
                             <a href="https://github.com/topics/smart-home" target="_blank" class="topic">
                                 <img src="./img/topics/iot.png" alt="Internet Of Things Logo">
                                 <p>Smart Home Tech</p>
@@ -218,8 +248,9 @@
                             Some of the main project I manage/develop:<br/>
                             <a href="https://theorangealliance.org">TOA WebApp</a> - A website built with <u>Angular 6</u><br/>
                             <a href="https://theorangealliance.org/apidocs">TOA API</a> - Public <u>REST API</u> built with <u>Node.js</u>, <u>Express</u> and <u>MySQL</u> database<br/>
-                            <a href="https://github.com/orange-alliance/TOA-DataSync">TOA DataSync</a> - A <u>Java</u> App built to connect to the FTC Scoring System and allow live data uploads
-                        </div>
+                            <a href="https://github.com/orange-alliance/TOA-DataSync">TOA DataSync</a> - An app built with <u>Electron</u> and <u>Javascript</u>  to connect to the FTC Scoring System and allow live data uploads.<br/>
+							Along side these, we also use Google Firebase Functions, which I help develop.
+						</div>
                     </div>
                 </div>
             </div>
@@ -274,7 +305,7 @@
                             <img class="img-fluid" src="./img/pit_display.png" />
                         </div>
                         <div class="col-lg-6 col-sm-12">
-                            <h2>The Orange Alliance</h2>
+                            <h2>FRC Pit Display</h2>
                             <table class="table table-sm table-borderless">
                                 <tbody>
                                 <tr>
@@ -300,6 +331,85 @@
         </div>
     </div>
 
+    <!-- DMeXa -->
+    <div class="modal fade" id="dmexa" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="row w-100 mx-0">
+                        <div class="col-lg-6 col-sm-12">
+                            <img class="img-fluid" src="./img/dmexa.png" />
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <h2>DMeXa</h2>
+                            <table class="table table-sm table-borderless">
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Date:</th>
+                                    <td>Sept 2019</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Download:</th>
+                                    <td><a href="https://github.com/Techno11/AlexaDMX/archive/master.zip" target="_blank">ESP8266 Arduino Image</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Source Code:</th>
+                                    <td><a href="https://github.com/Techno11/AlexaDMX/" target="_blank">Github</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            Whenever I walked into our school's auditorium, I would jokeingly say "Alexa, Turn on the hosue lights" of course, it would never work 
+							but I would always give myself a chuckle.  This code, nicknamed "D-M-X-a," a combination of "DMX" and "Alexa." As in the name, it uses DMX to 
+							control specific fixtures in a DMX controlled environment.  It uses an NodeMCU 1.0 ESP8266 and a Max485 Serial converter board.  It acts as a
+							 DMX master device, and allows control over 1 DMX universe.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Osticket/Snipe Modal -->
+    <div class="modal fade" id="osticketsnipe" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="row w-100 mx-0">
+                        <div class="col-lg-6 col-sm-12">
+                            <img class="img-fluid" src="./img/osticketsnipe.png" />
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <h2>OsTicket/Snipe-IT integrator</h2>
+                            <table class="table table-sm table-borderless">
+                                <tbody>
+                                <tr>
+                                    <th scope="row">Date:</th>
+                                    <td>March 2019</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Download:</th>
+                                    <td><a href="https://github.com/Techno11/os-ticket-snipe-it/archive/master.zip" target="_blank">Plugin</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Source Code:</th>
+                                    <td><a href="https://github.com/Techno11/os-ticket-snipe-it" target="_blank">Github</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            A plugin designed to parse incoming messages for [Asset_tag] or {Serial_Number}, and automatically 
+							add a link to the asset in the ticket body.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
